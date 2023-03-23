@@ -1,5 +1,6 @@
 package ph29152.fptpoly.duanoderfoodnhom1.Fragment;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Build;
@@ -23,7 +24,7 @@ import ph29152.fptpoly.duanoderfoodnhom1.R;
 
 
 public class UserFragment extends Fragment {
-    private TextView tvNameUser,tvPhoneUser,tvPasswordUser,tvEmailUser,tvAddressUser,tvViTien;
+    private TextView tvNameUser,tvPhoneUser,tvPasswordUser,tvEmailUser,tvAddressUser,tvViTien,tvNapTien;
     private ImageView imgAvatarUser;
     private Button btnUpdateUser;
 
@@ -43,6 +44,7 @@ public class UserFragment extends Fragment {
         tvEmailUser=view.findViewById(R.id.tvEmailUser);
         tvAddressUser=view.findViewById(R.id.tvAddressUser);
         tvViTien=view.findViewById(R.id.tvViTien);
+        tvNapTien=view.findViewById(R.id.tvNapTien);
         imgAvatarUser=view.findViewById(R.id.imgAvatarUser);
         btnUpdateUser=view.findViewById(R.id.btnUpdateUser);
 
@@ -72,8 +74,18 @@ public class UserFragment extends Fragment {
 
             }
         });
+        tvNapTien.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                napTien();
+            }
+        });
     }
 
+    private void napTien() {
+        Intent intent = new Intent();
+        startActivity(intent);
+    }
 
 
 }

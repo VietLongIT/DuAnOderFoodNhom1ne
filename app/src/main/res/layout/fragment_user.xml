@@ -29,15 +29,34 @@
         android:textColor="@color/black"
         android:textSize="16dp" />
 
-    <TextView
-        android:id="@+id/tvViTien"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:gravity="center"
-        android:text="TextView"
-        android:textColor="@color/black"
-        android:textSize="16dp" />
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:id="@+id/tvViTien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/tvNapTien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nạp thêm tiền"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:textColor="@color/redapp"
+            android:textSize="16dp"
+            />
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/tvPhoneUser"
